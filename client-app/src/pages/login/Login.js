@@ -11,10 +11,12 @@ import {
   Checkbox,
 } from "antd";
 import React from "react";
+import { useAppContext } from "../../hooks/useAppContext";
 import { useNavigate } from "react-router";
 import axios from "axios";
 
 export default function Login() {
+  const { data: loginContext, setData: setLoginContext } = useAppContext('login');
   let navigate = useNavigate();
   const showback = () => {
     navigate('/home');
@@ -39,17 +41,19 @@ export default function Login() {
     axios({
       method: 'get',
       url: `https://localhost:5000/login?username=${values.Username}&password=${values.Password}`,
-      // headers: { Authorization: `Bearer ${token}` }
     })
 
       .then(response => {
-        if(response.data){
+        if (response.data) {
+          localStorage.setItem("login", JSON.stringify(response.data));
+          setLoginContext(true)
           Modal.success({
             title: 'SAVE SUCCESSFULLY',
             content: 'You have done this very well',
             onOk: () => { showback() }
           })
-        }else{
+        } else {
+          setLoginContext(false)
           Modal.error({
             title: 'CHANGE FAILED',
             content: 'Loi roi'
@@ -57,6 +61,7 @@ export default function Login() {
         }
       })
       .catch(e => {
+        setLoginContext(false)
         Modal.error({
           title: 'CHANGE FAILED',
           content: e

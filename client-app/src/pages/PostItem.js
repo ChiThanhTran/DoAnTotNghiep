@@ -7,7 +7,6 @@ const PostItem = (props = {}) => {
     const { data } = props;
     const [cate, setCate] = useState();
     const [user, setUser] = useState();
-    console.log(data, cate);
 
     const getcategory = async () => {
         let res = await axios.get(`https://localhost:5000/getcategory/${data.categoryId}`);
@@ -29,7 +28,6 @@ const PostItem = (props = {}) => {
     useEffect(() => {
         getuser();
     }, []);
-    console.log(user)
 
     return (
         <div className="parent">

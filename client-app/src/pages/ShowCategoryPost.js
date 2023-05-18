@@ -14,7 +14,7 @@ const ShowCategoryPost = () => {
     const [dataSource, setDataSource] = useState([]);
     const [cate, setCate] = useState([]);
     const id = useParams().id;
-    console.log("hello",id)
+    
     const fetchData = () => {
         fetch(`https://localhost:5000/getallpostbycategory?categoryid=${id}`)
             .then(response => {

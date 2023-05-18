@@ -12,7 +12,7 @@ using Server.DB;
 namespace Server.Migrations
 {
     [DbContext(typeof(MyDBContext))]
-    [Migration("20230517100107_InitialCreate")]
+    [Migration("20230518105737_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -263,21 +263,21 @@ namespace Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("15d81006-6120-41e1-bb39-acb7459f58c7"),
+                            Id = new Guid("e2888c3e-51a6-43e4-9188-1478ae6f4c1e"),
                             CommentId = 1,
                             IsLikeComment = 0,
                             UserId = 1
                         },
                         new
                         {
-                            Id = new Guid("cb9e25b7-6ee9-455e-8e44-690e369c0073"),
+                            Id = new Guid("40df27cf-5272-4ae5-9712-60d719010a30"),
                             CommentId = 2,
                             IsLikeComment = 0,
                             UserId = 2
                         },
                         new
                         {
-                            Id = new Guid("f29e5cb3-11a1-4df4-9195-adb8dab1b999"),
+                            Id = new Guid("41ec3d43-c7ad-46ee-9aaa-bca5e062e817"),
                             CommentId = 3,
                             IsLikeComment = 0,
                             UserId = 3
@@ -310,21 +310,21 @@ namespace Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("98ba4915-0ee4-4371-a765-d7034b9c679f"),
+                            Id = new Guid("dd6d8117-edcb-4788-b190-8b6f2871d5fb"),
                             IsLikePost = 0,
                             PostId = 1,
                             UserId = 1
                         },
                         new
                         {
-                            Id = new Guid("651fca57-125b-46f1-95d0-dca52462cd32"),
+                            Id = new Guid("70e18dfa-21d3-4bdc-b76d-988d4de05abe"),
                             IsLikePost = 0,
                             PostId = 2,
                             UserId = 2
                         },
                         new
                         {
-                            Id = new Guid("1796829a-8e34-4555-96db-a05b0d2e906a"),
+                            Id = new Guid("43ae6469-83cd-48ad-9940-55b7e16109c9"),
                             IsLikePost = 0,
                             PostId = 3,
                             UserId = 3
@@ -357,21 +357,21 @@ namespace Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("40f89825-07bc-4f30-9295-1a5c31311947"),
+                            Id = new Guid("45d77109-1ad3-4081-ba03-a215bf9d7008"),
                             IsLikeReplyComment = 0,
                             ReplyCommentId = 1,
                             UserId = 1
                         },
                         new
                         {
-                            Id = new Guid("b9886ebd-2b60-4d8a-93d5-8bd66c4d602e"),
+                            Id = new Guid("acba20ba-a9d0-4dd9-9dba-876f3b72abd2"),
                             IsLikeReplyComment = 0,
                             ReplyCommentId = 2,
                             UserId = 2
                         },
                         new
                         {
-                            Id = new Guid("b0b121de-7459-4647-b5f1-4f10c1e62464"),
+                            Id = new Guid("5350003a-0fde-43aa-9b96-a51b675f30f2"),
                             IsLikeReplyComment = 0,
                             ReplyCommentId = 3,
                             UserId = 3
@@ -562,21 +562,21 @@ namespace Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("62507c67-1fb3-4e75-8d4f-a09264ca1a56"),
+                            Id = new Guid("c7afcd8c-6807-45cc-9bcf-34c2144c4695"),
                             IsSafe = 0,
                             PostId = 1,
                             UserId = 1
                         },
                         new
                         {
-                            Id = new Guid("118a7779-c467-48ee-a38a-289baa24b6a5"),
+                            Id = new Guid("382e74f8-d41a-40a3-8bb6-1008bee6c71c"),
                             IsSafe = 0,
                             PostId = 2,
                             UserId = 2
                         },
                         new
                         {
-                            Id = new Guid("16d5b30d-ec04-429b-a515-4428f5f6b267"),
+                            Id = new Guid("fa3cd03d-2e6b-4f9c-8d1c-bbb68015ce10"),
                             IsSafe = 0,
                             PostId = 3,
                             UserId = 3
@@ -640,19 +640,19 @@ namespace Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d43cf213-0a96-4e16-8507-5a00f30a386e"),
+                            Id = new Guid("ec08bae7-e45c-4ed0-896b-21763bba6408"),
                             PostId = 1,
                             TagId = 1
                         },
                         new
                         {
-                            Id = new Guid("4314b738-423f-4d71-a962-39cac4a77a02"),
+                            Id = new Guid("9990b508-75a5-4271-adda-940b086b0b89"),
                             PostId = 2,
                             TagId = 2
                         },
                         new
                         {
-                            Id = new Guid("4e9363e0-2ffd-4380-b72a-f85ea77081ec"),
+                            Id = new Guid("b021283b-e4a7-481d-a421-248663699de3"),
                             PostId = 3,
                             TagId = 3
                         });

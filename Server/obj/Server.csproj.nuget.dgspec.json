@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Welcome\\OneDrive\\Documents\\Project Thực Tập\\Lan cuoi thuc su nay\\DoAnTotNghiep\\FinalTime\\Server\\Server.csproj": {}
+    "D:\\Study\\DoAnTotNghiep\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Welcome\\OneDrive\\Documents\\Project Thực Tập\\Lan cuoi thuc su nay\\DoAnTotNghiep\\FinalTime\\Server\\Server.csproj": {
+    "D:\\Study\\DoAnTotNghiep\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Welcome\\OneDrive\\Documents\\Project Thực Tập\\Lan cuoi thuc su nay\\DoAnTotNghiep\\FinalTime\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\Study\\DoAnTotNghiep\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\Welcome\\OneDrive\\Documents\\Project Thực Tập\\Lan cuoi thuc su nay\\DoAnTotNghiep\\FinalTime\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Welcome\\OneDrive\\Documents\\Project Thực Tập\\Lan cuoi thuc su nay\\DoAnTotNghiep\\FinalTime\\Server\\obj\\",
+        "projectPath": "D:\\Study\\DoAnTotNghiep\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\DoAnTotNghiep\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://172.22.1.160:8080/httpAuth/app/nuget/v1/FeedService.svc/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,8 +93,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -106,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
